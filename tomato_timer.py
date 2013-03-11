@@ -8,28 +8,6 @@ import time
 import pygtk
 import datetime
 
-def createWindow_work():
-        window = gtk.Window()
-        window.set_default_size(300, 300)
-        window.connect('destroy', gtk.main_quit)
-
-        label = gtk.Label('Go to Rest!')
-        window.add(label)
-
-        label.show()
-        window.show()
-
-def createWindow_rest():
-        window = gtk.Window()
-        window.set_default_size(300, 300)
-        window.connect('destroy', gtk.main_quit)
-
-        label = gtk.Label('Back to work!')
-        window.add(label)
-
-        label.show()
-        window.show()
-
 table = {'work_trigger': 15, 'rest_trigger': 3}
 
 def q1():
@@ -66,11 +44,35 @@ def q2():
 			q2()
 			break
 
+def createWindow_work():
+        window = gtk.Window()
+        window.set_default_size(300, 300)
+        window.connect('destroy', gtk.main_quit)
+
+        label = gtk.Label('Go to Rest!')
+        window.add(label)
+
+        label.show()
+        window.show()
+
+def createWindow_rest():
+        window = gtk.Window()
+        window.set_default_size(300, 300)
+        window.connect('destroy', gtk.main_quit)
+
+        label = gtk.Label('Back to work!')
+        window.add(label)
+
+        label.show()
+        window.show()
+
 q1()
 q2()
 
 work_sec = int(table['work_trigger']) * 60
 rest_sec = int(table['rest_trigger']) * 60
+
+print "Running..."
 
 while 1:
 	while 1:
