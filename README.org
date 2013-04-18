@@ -1,1 +1,9 @@
-* 番茄工作法
+* Tomatopie                                                           :番茄工作法:
+** DONE 响铃
+CLOSED: [2013-04-09 二 23:45]
+- pyaudio
+- 播放sounds文件夹下的Old Phone.wav
+** DONE 弹窗
+CLOSED: [2013-04-09 二 23:45]
+- pygtk
+** TODO 多线程
